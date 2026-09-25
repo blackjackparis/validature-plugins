@@ -1,0 +1,19 @@
+{
+  "name": "validature",
+  "owner": {
+    "name": "Validature",
+    "email": "contact@validature.com"
+  },
+  "metadata": {
+    "description": "Signature électronique Validature pour Claude Code et Claude Cowork."
+  },
+  "plugins": [
+    {
+      "name": "validature",
+      "source": "./validature",
+      "description": "Envoyer des documents à signer depuis vos modèles Validature, suivre les signatures et relancer, depuis Claude.",
+      "version": "1.0.0",
+      "category": "productivity"
+    }
+  ]
+}

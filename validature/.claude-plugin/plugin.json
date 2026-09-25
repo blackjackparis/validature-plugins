@@ -1,0 +1,19 @@
+{
+  "name": "validature",
+  "version": "1.0.0",
+  "description": "Electronic signature from Claude: send documents from your Validature templates, follow who signed and send reminders. Hosted in France, eIDAS.",
+  "author": {
+    "name": "Validature",
+    "email": "contact@validature.com",
+    "url": "https://validature.app"
+  },
+  "homepage": "https://validature.app/settings/integrations",
+  "license": "MIT",
+  "keywords": [
+    "signature",
+    "e-signature",
+    "eidas",
+    "contracts",
+    "mcp"
+  ]
+}

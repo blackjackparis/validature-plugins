@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "validature": {
+      "type": "http",
+      "url": "https://validature.app/api/v1/mcp"
+    }
+  }
+}
