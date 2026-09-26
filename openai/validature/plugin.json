@@ -4,7 +4,7 @@
   "version": "1.2.0",
   "description": "Send documents for electronic signature, create and share reusable templates, follow signers and download signed files. Continue encrypted Vault workflows in Validature’s secure browser.",
   "author": {
-    "name": "Validature",
+    "name": "LOGIKS",
     "email": "contact@validature.com",
     "url": "https://validature.app"
   },
@@ -28,18 +28,18 @@
         "logo": "./assets/logo.svg",
         "shortDescription": "Documents, templates and Vault",
         "longDescription": "Send your own documents or a reusable template for signature, manage template access, follow requests, send reminders and retrieve signed documents. Vault content stays encrypted: continue sensitive workflows in the secure Validature browser.",
-        "developerName": "Validature",
+        "developerName": "LOGIKS",
         "capabilities": [
           "Read",
           "Write"
         ],
         "websiteURL": "https://validature.com",
+        "supportURL": "https://validature.com/contact/",
         "privacyPolicyURL": "https://validature.app/privacy",
         "termsOfServiceURL": "https://validature.app/terms",
         "defaultPrompt": [
           "Send this document for signature with Validature.",
-          "Create a reusable Validature template from this document.",
-          "Share my Validature template with a colleague.",
+          "Create a reusable Validature template and share it with a colleague.",
           "Help me send a confidential document with Validature Vault."
         ]
       }

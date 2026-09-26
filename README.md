@@ -83,8 +83,9 @@ claude plugin validate .
 ```
 
 Valider aussi `openai/validature/plugin.json` et `mcp.json` avec leurs schémas
-Agent Plugins déclarés. Les quatre skills doivent rester identiques entre
-les packages Claude et OpenAI. Après une évolution des scopes OAuth,
+Agent Plugins déclarés. Les quatre parcours doivent rester cohérents entre
+les packages ; les skills conservent les contraintes propres à chaque hôte,
+notamment les catégories de données exclues par OpenAI. Après une évolution des scopes OAuth,
 reconnecter une installation existante pour consentir aux nouvelles actions.
 Le test avec les vrais clients doit couvrir les fichiers, les droits de
 partage et la reprise du parcours Vault avant de déclarer une version prête

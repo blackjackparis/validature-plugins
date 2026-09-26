@@ -14,3 +14,7 @@ description: Check Validature signature requests, identify outstanding signers, 
 For Vault requests, use `get_vault_request` with a known request ID and give its secure browser continuation link. The tool exposes structural progress only. Do not infer identities, titles or document contents from redacted metadata; do not ask for decryption keys. Reading encrypted files, sending or retrieving Vault documents happens in the browser using the `vault-signatures` skill.
 
 Never claim a document was signed merely because its invitation was sent or opened. If a write result is uncertain, read the current request state before attempting it again.
+
+## OpenAI data boundary
+
+When running in ChatGPT or Codex, do not collect, import, retrieve or process documents containing payment-card data subject to PCI DSS, protected health information, government identifiers or authentication secrets. If the user identifies such contents, explain the restriction without requesting the sensitive values; do not use browser upload or Vault as a workaround. For other regulated sensitive data, require the legally adequate consent and prominent collection notice required by the host policy. This rule does not require reading an otherwise unopened file merely to classify it.

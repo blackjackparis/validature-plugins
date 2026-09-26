@@ -3,11 +3,11 @@
   "version": "1.2.0",
   "description": "Send documents for electronic signature, create and share reusable templates, follow signers and download signed files. Continue encrypted Vault workflows in Validature’s secure browser.",
   "author": {
-    "name": "Validature",
+    "name": "LOGIKS",
     "email": "contact@validature.com",
     "url": "https://validature.app"
   },
-  "homepage": "https://validature.app/settings/integrations",
+  "homepage": "https://github.com/blackjackparis/validature-plugins/tree/main/validature",
   "license": "MIT",
   "keywords": [
     "signature",

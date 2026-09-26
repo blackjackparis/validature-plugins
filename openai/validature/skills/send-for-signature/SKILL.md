@@ -30,3 +30,7 @@ For a confidential Vault document, switch to `vault-signatures` before uploading
 If `send_document` says antivirus analysis is pending, retry with the same arguments after a short wait. Do not claim success before the tool confirms it. For an uncertain `send_template` result, retry the same key and arguments or inspect recent requests; do not mint a new key merely because a response was interrupted.
 
 The integration requires a Validature plan with integrations (Standard or above). A missing OAuth scope requires reconnecting the assistant and consenting to the requested access; do not work around it with a password or API key.
+
+## OpenAI data boundary
+
+When running in ChatGPT or Codex, do not collect, import, retrieve or process documents containing payment-card data subject to PCI DSS, protected health information, government identifiers or authentication secrets. If the user identifies such contents, explain the restriction without requesting the sensitive values; do not use browser upload or Vault as a workaround. For other regulated sensitive data, require the legally adequate consent and prominent collection notice required by the host policy. This rule does not require reading an otherwise unopened file merely to classify it.

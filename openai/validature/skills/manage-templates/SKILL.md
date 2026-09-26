@@ -32,3 +32,7 @@ Use `list_templates` to locate a template, then `get_template` to inspect it. Us
 4. To remove access, state the affected member and template, obtain explicit authorization, then call `revoke_template_share`. Confirm the result through the returned share state or `list_template_shares`.
 
 Template mutation uses `templates:write`; sharing uses `templates:share`. If an existing assistant connection lacks a scope, ask the user to reconnect and approve the new scope. The account also needs the templates feature. Never fall back to a more privileged credential.
+
+## OpenAI data boundary
+
+When running in ChatGPT or Codex, do not collect, import, retrieve or process documents containing payment-card data subject to PCI DSS, protected health information, government identifiers or authentication secrets. If the user identifies such contents, explain the restriction without requesting the sensitive values; do not use browser upload or Vault as a workaround. For other regulated sensitive data, require the legally adequate consent and prominent collection notice required by the host policy. This rule does not require reading an otherwise unopened file merely to classify it.

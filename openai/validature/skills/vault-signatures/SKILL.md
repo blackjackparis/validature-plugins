@@ -13,3 +13,7 @@ Vault is a browser workflow. The assistant prepares a draft or checks structural
 4. After the browser step, call `get_vault_request` with `requestId` for the safe status, counts and timestamps. Report only the progress returned. If the user needs content, identities, detailed editing or signed files, open or provide the secure continuation link.
 
 A draft link never establishes that sending is complete. Do not pass a Vault file to `import_document` or the standard upload, template or send tools. Never claim legacy Vault has the zero-access metadata guarantees of V2. Vault-specific reusable templates are not exposed by this integration; explain this limit if asked, without converting confidential content into a standard template.
+
+## OpenAI data boundary
+
+When running in ChatGPT or Codex, do not collect, import, retrieve or process documents containing payment-card data subject to PCI DSS, protected health information, government identifiers or authentication secrets. If the user identifies such contents, explain the restriction without requesting the sensitive values; do not use browser upload or Vault as a workaround. For other regulated sensitive data, require the legally adequate consent and prominent collection notice required by the host policy. This rule does not require reading an otherwise unopened file merely to classify it.
