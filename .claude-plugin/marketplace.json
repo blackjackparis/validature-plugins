@@ -1,18 +1,18 @@
 {
   "name": "validature",
   "owner": {
-    "name": "Validature",
+    "name": "LOGIKS",
     "email": "contact@validature.com"
   },
   "metadata": {
-    "description": "Signature électronique Validature pour Claude Code et Claude Cowork."
+    "description": "Documents, modèles et parcours Vault avec Validature dans Claude."
   },
   "plugins": [
     {
       "name": "validature",
       "source": "./validature",
-      "description": "Envoyer des documents à signer depuis vos modèles Validature, suivre les signatures et relancer, depuis Claude.",
-      "version": "1.0.0",
+      "description": "Envoyer des documents à signer, créer et partager des modèles, suivre les signatures et continuer les parcours Vault dans le navigateur sécurisé.",
+      "version": "1.2.0",
       "category": "productivity"
     }
   ]
